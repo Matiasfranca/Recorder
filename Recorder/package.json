@@ -1,0 +1,26 @@
+{
+  "name": "recorder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start_dev": "cross-env NODE_DEV=development electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Matias",
+  "license": "ISC",
+  "build":{
+    "appId": "com.programadormatias.recorder",
+    "win":{
+      "icon": "./assets/icons/icon.png"
+    }
+  },
+
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^25.3.2",
+    "electron-builder": "^24.6.3"
+  }
+}
